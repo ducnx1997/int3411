@@ -25,11 +25,11 @@ class GUI:
         self.video = Tk.Label(frame_left, width=1024, height=576)
         # Start the speech recognition and video thread separately
         camera_module = Thread(target=self.video_processor.show_frame)
-        # speech_module = Thread(target=self.video_processor.speech_module.speech_rec)
+        speech_module = Thread(target=self.video_processor.speech_module.speech_rec)
         camera_module.start()
         # Set speech recognition thread to daemon so that exit callback can work
-        # speech_module.daemon = True
-        # speech_module.start()
+        speech_module.daemon = True
+        speech_module.start()
         self.video.pack()
         # Take picture button
         Tk.Button(frame_left, text='TAKE PICTURE', command=self.snap_call).pack(ipady=10, ipadx=465, expand=True)
@@ -68,7 +68,7 @@ class GUI:
         file_name = 'photo_' + str(self.photo_count) + '.jpg'
         self.photo_count = self.photo_count + 1
         img = np.array(self.video_processor.img_f)
-        cv2.imwrite(file_name, cv2.cvtColor(img,cv2.COLOR_RGBA2BGRA))
+        cv2.imwrite('./photos/' + file_name, cv2.cvtColor(img,cv2.COLOR_RGBA2BGRA))
 
     # Zoom in callback
     def zoom1_callback(self):
@@ -91,6 +91,9 @@ class GUI:
             self.video_processor.blur -= 2
 
     # Filter callback functions
+    def default_callback(self):
+        self.video_processor.do_filter = 0
+
     def country_callback(self):
         if self.video_processor.do_filter == 1:
             self.video_processor.do_filter = 0

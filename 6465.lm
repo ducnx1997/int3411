@@ -1,0 +1,68 @@
+Language model created by QuickLM on Wed May 15 03:08:08 EDT 2019
+Carnegie Mellon University (c) 1996
+
+This model based on a corpus of 12 sentences and 36 words
+The (fixed) discount mass is 0.5
+
+\data\
+ngram 1=14
+ngram 2=24
+ngram 3=12
+
+\1-grams:
+-0.7782 </s> -0.3010
+-0.7782 <s> -0.2218
+-1.8573 BIGGER -0.2218
+-1.8573 BLUR -0.2218
+-1.8573 BRIGHTER -0.2218
+-1.8573 CHEESE -0.2218
+-1.8573 CLEAR -0.2218
+-1.8573 DARKER -0.2218
+-1.8573 FIVE -0.2218
+-1.8573 FOUR -0.2218
+-1.8573 ONE -0.2218
+-1.8573 SMALLER -0.2218
+-1.8573 THREE -0.2218
+-1.8573 TWO -0.2218
+
+\2-grams:
+-1.3802 <s> BIGGER 0.0000
+-1.3802 <s> BLUR 0.0000
+-1.3802 <s> BRIGHTER 0.0000
+-1.3802 <s> CHEESE 0.0000
+-1.3802 <s> CLEAR 0.0000
+-1.3802 <s> DARKER 0.0000
+-1.3802 <s> FIVE 0.0000
+-1.3802 <s> FOUR 0.0000
+-1.3802 <s> ONE 0.0000
+-1.3802 <s> SMALLER 0.0000
+-1.3802 <s> THREE 0.0000
+-1.3802 <s> TWO 0.0000
+-0.3010 BIGGER </s> -0.3010
+-0.3010 BLUR </s> -0.3010
+-0.3010 BRIGHTER </s> -0.3010
+-0.3010 CHEESE </s> -0.3010
+-0.3010 CLEAR </s> -0.3010
+-0.3010 DARKER </s> -0.3010
+-0.3010 FIVE </s> -0.3010
+-0.3010 FOUR </s> -0.3010
+-0.3010 ONE </s> -0.3010
+-0.3010 SMALLER </s> -0.3010
+-0.3010 THREE </s> -0.3010
+-0.3010 TWO </s> -0.3010
+
+\3-grams:
+-0.3010 <s> BIGGER </s>
+-0.3010 <s> BLUR </s>
+-0.3010 <s> BRIGHTER </s>
+-0.3010 <s> CHEESE </s>
+-0.3010 <s> CLEAR </s>
+-0.3010 <s> DARKER </s>
+-0.3010 <s> FIVE </s>
+-0.3010 <s> FOUR </s>
+-0.3010 <s> ONE </s>
+-0.3010 <s> SMALLER </s>
+-0.3010 <s> THREE </s>
+-0.3010 <s> TWO </s>
+
+\end\
